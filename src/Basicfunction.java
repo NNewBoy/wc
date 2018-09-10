@@ -13,10 +13,11 @@ public class Basicfunction{
             s1 = s1 + " ";
             s2 += s1;
             lcount ++;
-            s1 = s1.replaceAll("^|a-z|\\s{1,}","");
-            String[] sarr = s1.split(" ");
+            s1 = s1.replaceAll("[^a-zA-Z]"," ");
+            String[] sarr = s1.split("\\s+");
             wcount += sarr.length;
         }
+        brin.close();
     }
     public int c(String filename){
         read(filename);
