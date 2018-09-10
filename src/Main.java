@@ -12,7 +12,6 @@ public class Main {
         String filename = filearr[filearr.length-1];
         Pattern pattern = Pattern.compile("\\-[cwlsa]");
         Matcher matcher = pattern.matcher(in);
-
         while (matcher.find()) {
             String command = matcher.group();
             switch (command){
