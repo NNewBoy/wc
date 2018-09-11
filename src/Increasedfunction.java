@@ -20,7 +20,6 @@ public class Increasedfunction {
                 explainCount3 = 0,explainCount4 = 0,explainCount5 = 0;
         String s1 = null;
         Boolean explainValue = false;
-
         BufferedReader brin = new BufferedReader(new FileReader(filename));
         while ((s1=brin.readLine())!=null){
             emptyCount = match("\\s",s1);
@@ -55,10 +54,14 @@ public class Increasedfunction {
         brin.close();
     }
 
-    public void a(String filename) throws IOException{
-        read(filename);
-        System.out.println("空行数："+emptyLine);
-        System.out.println("代码行数："+codeLine);
-        System.out.println("注释行数："+explainLine);
+    public void a(String filename){
+        try{
+            read(filename);
+            System.out.println("空行数："+emptyLine);
+            System.out.println("代码行数："+codeLine);
+            System.out.println("注释行数："+explainLine);
+        }catch (Exception e){
+            System.out.println("输入路径出错");
+        }
     }
 }
