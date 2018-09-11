@@ -15,9 +15,22 @@ public class Main {
         while (matcher.find()) {
             String command = matcher.group();
             switch (command){
-                case "-c":new Basicfunction().c(filename);break;
-                case "-w":new Basicfunction().w(filename);break;
-                case "-l":new Basicfunction().l(filename);break;
+                case "-c":
+                    new Basicfunction().c(filename);
+                    break;
+                case "-w":
+                    new Basicfunction().w(filename);
+                    break;
+                case "-l":
+                    new Basicfunction().l(filename);
+                    break;
+                case "-s":
+                    break;
+                case "-a":
+                    new Increasedfunction().a(filename);
+                    break;
+                default:
+                    System.out.println("命令输入错误");
             }
         }
 
