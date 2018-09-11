@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Basicfunction{
 
@@ -12,9 +14,10 @@ public class Basicfunction{
             s1 = s1 + " ";
             s2 += s1;
             lcount ++;
-            s1 = s1.replaceAll("\\W","");
-            String[] sarr = s1.split("\\s+");
-            wcount += sarr.length;
+            Pattern pattern = Pattern.compile("\\w+");
+            Matcher matcher = pattern.matcher(s1);
+            while (matcher.find())
+                wcount++;
         }
         brin.close();
     }

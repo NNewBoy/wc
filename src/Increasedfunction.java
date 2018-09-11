@@ -16,9 +16,11 @@ public class Increasedfunction {
     }
 
     private void read(String filename) throws IOException {
-        int emptyCount,emptyCharCount,displayCharCount,explainCount1,explainCount2,explainCount3,explainCount4,explainCount5;
+        int emptyCount = 0,emptyCharCount = 0,displayCharCount = 0,explainCount1 = 0,explainCount2 = 0,
+                explainCount3 = 0,explainCount4 = 0,explainCount5 = 0;
         String s1 = null;
         Boolean explainValue = false;
+
         BufferedReader brin = new BufferedReader(new FileReader(filename));
         while ((s1=brin.readLine())!=null){
             emptyCount = match("\\s",s1);
@@ -27,8 +29,8 @@ public class Increasedfunction {
             explainCount1 = match("\\/\\/",s1);
             explainCount2 = match("\\/\\*",s1);
             explainCount3 = match("\\*\\/",s1);
-            explainCount4 = match("\\S{2,}\\s*\\/\\*",s1);
-            explainCount5 = match("\\S{2,}\\s*\\/\\/",s1);
+            explainCount4 = match("\\S{2,}.*\\/\\*",s1);
+            explainCount5 = match("\\S{2,}.*\\/\\/",s1);
             if (explainCount2 != 0){
                 explainValue = true;
                 if (explainCount4 != 0){
@@ -42,13 +44,13 @@ public class Increasedfunction {
                 if (explainCount5 != 0){
                     codeLine++;
                 }else explainLine++;
-            }else if (displayCharCount == 0 && (emptyCount != 0 || emptyCharCount <= 1)) {
+            }else if (!explainValue && displayCharCount == 0 && (emptyCount != 0 || emptyCharCount <= 1)) {
                 emptyLine++;
-            }else codeLine++;
+            }else if (!explainValue)codeLine++;
             if (explainValue)
-                emptyLine++;
+                explainLine++;
             if (explainCount2 != 0 && explainCount3 != 0)
-                emptyLine--;
+                explainLine--;
         }
         brin.close();
     }
