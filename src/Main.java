@@ -12,27 +12,6 @@ public class Main {
         String filename = filearr[filearr.length-1];
         Pattern pattern = Pattern.compile("\\-[cwlsa]");
         Matcher matcher = pattern.matcher(in);
-        while (matcher.find()) {
-            String command = matcher.group();
-            switch (command){
-                case "-c":
-                    new Basicfunction().c(filename);
-                    break;
-                case "-w":
-                    new Basicfunction().w(filename);
-                    break;
-                case "-l":
-                    new Basicfunction().l(filename);
-                    break;
-                case "-s":
-                    break;
-                case "-a":
-                    new Increasedfunction().a(filename);
-                    break;
-                default:
-                    System.out.println("命令输入错误");
-            }
-        }
-
+        new Command().command(in,filename,matcher);
     }
 }
