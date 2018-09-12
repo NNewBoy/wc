@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 
 public class Command {
-    void command(String input,String filename,Matcher matcher){
+    void command(String input,String filename,Matcher matcher) {
         try {
             Boolean s = false;
             List<String> commands = new ArrayList<>();
@@ -10,14 +10,15 @@ public class Command {
                 String command = matcher.group();
                 if (command.equals("-s")) {
                     s = true;
-                } else
+                } else {
                     commands.add(command);
+                }
             }
             if (s) {
                 new Directory().readDirectory(filename, input);
             } else {
                 System.out.println("文件：" + filename);
-                for (String command1 : commands) {
+                for (String command1: commands) {
                     switch (command1) {
                         case "-c":
                             new Basicfunction().c(filename);
@@ -33,10 +34,11 @@ public class Command {
                             break;
                         default:
                             System.out.println("命令输入错误");
+                            break;
                     }
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("输入路径出错");
         }
     }

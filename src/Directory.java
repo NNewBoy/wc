@@ -3,16 +3,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Directory {
-    void readDirectory(String filename , String input){
+    void readDirectory(String filename , String input) {
         Pattern pattern = Pattern.compile("\\-[cwla]");
         Matcher matcher = pattern.matcher(input);
         File filedirectory = new File(filename);
         File[] files = filedirectory.listFiles();
-        for (File file : files){
-            if (file.isDirectory())
+        for (File file : files) {
+            if (file.isDirectory()) {
                 readDirectory(file.getPath(),input);
-            else
+            } else {
                 new Command().command(input,file.getPath(),matcher);
+            }
         }
     }
 }

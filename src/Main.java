@@ -1,10 +1,9 @@
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.out.println("----------------------命令格式----------------------");
         System.out.println("-c [文件路径]  \\返回字符数");
         System.out.println("-w [文件路径]  \\返回词的数目");
@@ -17,7 +16,7 @@ public class Main {
         String in = input.nextLine();
         String[] filearr = in.split("\\s");
         String filename = filearr[filearr.length-1];
-        Pattern pattern = Pattern.compile("\\-[cwlsa]");
+        Pattern pattern = Pattern.compile("\\-[a-z]");
         Matcher matcher = pattern.matcher(in);
         new Command().command(in,filename,matcher);
     }
