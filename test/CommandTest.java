@@ -12,7 +12,6 @@ public class CommandTest extends TestCase {
         Matcher matcher = pattern.matcher(input);
         ByteArrayOutputStream baoStream = new ByteArrayOutputStream(1024);
         PrintStream cacheStream = new PrintStream(baoStream);
-        PrintStream oldStream = System.out;
         System.setOut(cacheStream);//不打印到控制台
         Command command = new Command();
         command.command(input,filename,matcher);

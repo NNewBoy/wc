@@ -3,6 +3,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
+    void input(String in){
+        String[] filearr = in.split("\\s");
+        String filename = filearr[filearr.length-1];
+        Pattern pattern = Pattern.compile("\\-[a-z]");
+        Matcher matcher = pattern.matcher(in);
+        new Command().command(in,filename,matcher);
+    }
     public static void main(String[] args) {
         System.out.println("----------------------命令格式----------------------");
         System.out.println("-c [文件路径]  \\返回字符数");
@@ -14,10 +21,6 @@ public class Main {
         System.out.print("输入命令：");
         Scanner input = new Scanner(System.in);
         String in = input.nextLine();
-        String[] filearr = in.split("\\s");
-        String filename = filearr[filearr.length-1];
-        Pattern pattern = Pattern.compile("\\-[a-z]");
-        Matcher matcher = pattern.matcher(in);
-        new Command().command(in,filename,matcher);
+        new Main().input(in);
     }
 }

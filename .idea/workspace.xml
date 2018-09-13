@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaf4f40-0601-4d39-abd7-6e3df25918ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Basicfunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basicfunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Increasedfunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Increasedfunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CommandTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +18,8 @@
     <SUITE FILE_PATH="coverage/wc$CommandTest.ic" NAME="CommandTest Coverage Results" MODIFIED="1536774396192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/wc$CommandTest.es" NAME="CommandTest Coverage Results" MODIFIED="1536770761645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="emma" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/wc$CommandTest.exec" NAME="CommandTest Coverage Results" MODIFIED="1536770981823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/wc$All_in_wc.ic" NAME="All in wc Coverage Results" MODIFIED="1536820657289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/wc$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1536820580187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="478" />
@@ -43,33 +42,33 @@
     <session id="-1333936947">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="14" />
+          <entry key="java" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4967" />
+          <entry key="java" value="5158" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4966" />
+          <entry key="JAVA" value="5157" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="RegExp" value="1" />
         </counts>
@@ -84,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="665">
               <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -93,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+            <state relative-caret-position="259">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,8 +143,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state relative-caret-position="380">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,9 +188,10 @@
         <option value="$PROJECT_DIR$/src/Basicfunction.java" />
         <option value="$PROJECT_DIR$/src/Directory.java" />
         <option value="$PROJECT_DIR$/src/CommandTest.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Command.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/test/CommandTest.java" />
+        <option value="$PROJECT_DIR$/test/MainTest.java" />
       </list>
     </option>
   </component>
@@ -207,7 +219,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,8 +246,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,7 +255,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536774488918" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536820656774" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
@@ -278,10 +290,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CommandTest">
+  <component name="RunManager" selected="JUnit.All in wc">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="wc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in wc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -296,12 +316,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.CommandTest" />
+      <item itemvalue="JUnit.MainTest" />
+      <item itemvalue="JUnit.All in wc" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in wc" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.CommandTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -321,7 +353,8 @@
       <workItem from="1536654418508" duration="27048000" />
       <workItem from="1536729571790" duration="1329000" />
       <workItem from="1536750517312" duration="17714000" />
-      <workItem from="1536775681251" duration="242000" />
+      <workItem from="1536775681251" duration="485000" />
+      <workItem from="1536818058459" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1536591299818</created>
@@ -334,24 +367,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandTest - 2018.09.13 at 01h 41m 45s.xml">
-      <configuration name="CommandTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandTest - 2018.09.13 at 01h 41m 54s.xml">
-      <configuration name="CommandTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandTest - 2018.09.13 at 01h 45m 16s.xml">
-      <configuration name="CommandTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandTest - 2018.09.13 at 01h 45m 30s.xml">
-      <configuration name="CommandTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandTest - 2018.09.13 at 01h 45m 34s.xml">
-      <configuration name="CommandTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandTest - 2018.09.13 at 01h 45m 52s.xml">
-      <configuration name="CommandTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandTest - 2018.09.13 at 01h 46m 13s.xml">
       <configuration name="CommandTest" configurationId="JUnit" />
     </history-entry>
@@ -364,9 +379,27 @@
     <history-entry file="CommandTest - 2018.09.13 at 01h 46m 37s.xml">
       <configuration name="CommandTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest - 2018.09.13 at 14h 21m 32s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.09.13 at 14h 22m 31s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.09.13 at 14h 24m 46s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.09.13 at 14h 29m 00s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.09.13 at 14h 32m 35s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.09.13 at 14h 34m 56s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67897000" />
+    <option name="totallyTimeSpent" value="70632000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,7 +414,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.23659517" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.23994638" />
       <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.22453083" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -390,7 +423,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.23512748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798927" visible="true" weight="0.23512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -447,16 +480,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IncreasedfunctionTest.java" />
     <entry file="file://$PROJECT_DIR$/src/CommandTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -487,10 +510,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5560">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="380">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -499,8 +546,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/CommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+        <state relative-caret-position="259">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
