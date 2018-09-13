@@ -12,14 +12,14 @@ public class Basicfunction {
     private void read(String filename) throws IOException {
             BufferedReader brin = new BufferedReader(new FileReader(filename));
             while ((s1=brin.readLine())!=null) {
-                ccount += s1.length();
+                ccount += s1.length();//统计字符数
                 s1 = s1 + " ";
                 s2 += s1;
-                lcount ++;
+                lcount ++;//统计行数
                 Pattern pattern = Pattern.compile("\\w+");
                 Matcher matcher = pattern.matcher(s1);
                 while (matcher.find()) {
-                    wcount++;
+                    wcount++;//统计词数
                 }
             }
             brin.close();

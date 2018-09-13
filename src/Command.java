@@ -7,16 +7,20 @@ public class Command {
             Boolean s = false;
             List<String> commands = new ArrayList<>();
             while (matcher.find()) {
+                //将接收到的命令存入动态数组中
                 String command = matcher.group();
+                //判断是否接收到-s
                 if (command.equals("-s")) {
                     s = true;
                 } else {
                     commands.add(command);
                 }
             }
+            //实现-s命令
             if (s) {
                 new Directory().readDirectory(filename, input);
             } else {
+                //实现其他命令
                 System.out.println("文件：" + filename);
                 for (String command1: commands) {
                     switch (command1) {
